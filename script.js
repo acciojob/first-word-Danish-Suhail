@@ -1,5 +1,14 @@
 function firstWord(s) {
   // your code here
+	const spaceIndex = s.indexOf(" ");
+
+	if(spaceIndex === -1){
+		return s;
+	}
+	else{
+		return s.slice(0, spaceIndex);
+	}
+	
 }
 
 // Do not change the code below
